@@ -8,7 +8,9 @@
         <property name="accountDao" ref="accountDao"></property>
     </bean>
 
-    <bean id="accountDao" class="com.itheima.dao.impl.AccountDaoImpl"></bean>
+    <bean id="accountDao" class="com.itheima.dao.impl.AccountDaoImpl">
+        <property name="runner" ref="runner"></property>
+    </bean>
 
     <bean id="runner" class="org.apache.commons.dbutils.QueryRunner" scope="prototype">
         <constructor-arg name="ds" ref="dataSource"></constructor-arg>
@@ -18,6 +20,6 @@
         <property name="driverClass" value="com.mysql.jdbc.Driver"></property>
         <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/eesy"></property>
         <property name="user" value="root"></property>
-        <property name="password" value="111111">w </property>
+        <property name="password" value="111111"></property>
     </bean>
 </beans>
