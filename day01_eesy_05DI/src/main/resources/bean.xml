@@ -14,6 +14,16 @@
                 <property name="age" value="21"></property>
                 <property name="birthday" ref="now"></property>
         </bean>
+        <bean id="accountService3" class="com.itheima.service.impl.AccountServiceImpl2">
+                <property name="name" value="test2"></property>
+                <property name="age" value="21"></property>
+                <property name="birthday" ref="now"></property>
+        </bean>
+        <bean id="accountService3" class="com.itheima.service.impl.AccountServiceImpl2">
+                <property name="name" value="test3"></property>
+                <property name="age" value="21"></property>
+                <property name="birthday" ref="now"></property>
+        </bean>
         <bean id="accountService3" class="com.itheima.service.impl.AccountServiceImpl3">
                 <property name="myStrs">
                         <array>
