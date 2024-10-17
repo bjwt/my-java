@@ -43,7 +43,7 @@ public class AccountServiceTest {
     public void testUpdate() {
         ApplicationContext ac = new ClassPathXmlApplicationContext("bean2.xml");
         IAccountService as = ac.getBean("accountService",IAccountService.class);
-        Account account = as.findAccountById(4);
+        Account account = as.findAccountById(1);
         account.setMoney(23456f);
         as.updateAccount(account);
     }
