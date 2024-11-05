@@ -3,14 +3,17 @@ package com.itheima.test;
 import com.itheima.dao.IAccountDao;
 import com.itheima.domain.Account;
 import com.itheima.service.IAccountService;
+import config.JdbcConfig;
 import config.SpringConfiguration;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.util.List;
 
+@Configuration
 public class AccountServiceTest {
 
     @Test
